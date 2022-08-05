@@ -1,0 +1,17 @@
+body {
+  color: darkslategray;
+  background-color: snow;
+  text-align: center;
+  font-family: 'Kaisei Decol', serif;
+  width: 600px;
+  margin: 100px auto;
+}
+button {
+  padding: 5px 20px;
+  background-color: rgb(159, 171, 184);
+  border-style: none;
+  font-family: 'Kaisei Decol', serif;
+}
+input {
+  height: 22px;
+}
