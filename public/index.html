@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>おすすめの香り診断</title>
+  <link rel="stylesheet" href="scent-assessment.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Firebase にデプロイするためのコード -->
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyCtIG5yDxz5xtvS7nOYpXO9iIi6KeNHn9E",
+      authDomain: "scent-assessment.firebaseapp.com",
+      projectId: "scent-assessment",
+      storageBucket: "scent-assessment.appspot.com",
+      messagingSenderId: "908745209399",
+      appId: "1:908745209399:web:e698f0fa3e0e23fc46b1b2",
+      measurementId: "G-LY1J8VSLMB"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+
+  <h1>あなたにおすすめの香りは？</h1>
+  <p>名前を入力してください</p>
+  <input type="text" id="user-name" size="40" maxlength="20">
+  <button id="assessment">診断する</button>
+  <div id="result-area"></div>
+  <div id="tweet-area"></div>
+  <script src="scent-assessment.js"></script>
+</body>
+</html>
