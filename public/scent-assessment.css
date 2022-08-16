@@ -4,7 +4,7 @@ body {
   text-align: center;
   font-family: 'Kaisei Decol', serif;
   width: 600px;
-  margin: 100px auto;
+  margin: 50px auto;
 }
 button {
   padding: 5px 20px;
@@ -14,4 +14,14 @@ button {
 }
 input {
   height: 22px;
+}
+
+#user-area {
+  display: none;
+}
+#login-area {
+  display: none;
+}
+#register-area {
+  display: none;
 }
